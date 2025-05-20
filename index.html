@@ -1,94 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Meta Deals – Best Tech & Household Deals 2025</title>
-  <meta name="description" content="Discover Amazon's top-selling gadgets, electronics, and household must-haves. Curated deals updated for 2025.">
-  <meta name="keywords" content="tech deals, household gadgets, Amazon bestsellers, smart home, wireless earbuds, robot vacuums, air fryer, portable charger">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meta Deals - Top-selling electronics and home essentials at unbeatable prices." />
+  <title>Meta Deals Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body { font-family: Arial, sans-serif; background: #f5f8fa; margin: 0; padding: 0; }
-    header { background-color: #007acc; color: white; text-align: center; padding: 1rem; }
-    .container { display: flex; flex-wrap: wrap; justify-content: center; padding: 2rem; }
-    .product { background: white; border-radius: 10px; width: 300px; margin: 1rem; padding: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .product img { width: 100%; border-radius: 10px; }
-    .product h3 { font-size: 1.1rem; }
-    .product p { font-size: 0.95rem; }
-    .product a { display: inline-block; margin-top: 0.5rem; background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; }
-    footer { text-align: center; padding: 1rem; font-size: 0.9rem; color: #666; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #0a0a23;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .banner h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+    .buy-btn {
+      background: #0074d9;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
-<header>
-  <h1>Meta Deals</h1>
-  <p>Top-Selling Electronics & Household Picks</p>
-</header>
-<div class="container">
+  <header>
+    <h1>Meta Deals</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/714Rq4k05UL._AC_SL1000_.jpg" alt="Echo Dot (5th Gen, 2022 release)">
-      <h3>Echo Dot (5th Gen, 2022 release)</h3>
-      <p>Smart speaker with Alexa for hands-free control, music, news, and home automation.</p>
-      <a href="https://www.amazon.com/dp/B09B8V1LZ3?tag=georgeatwood7-20" target="_blank">Buy on Amazon</a>
+  <section class="banner">
+    <h1>Top Deals on Electronics & Essentials</h1>
+    <p>Shop trusted products at unbeatable prices</p>
+    <a class="buy-btn" href="#products">Shop Now</a>
+  </section>
+
+  <section id="products" class="products">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._AC_SL1500_.jpg" alt="Echo Dot">
+      <h3>Echo Dot (5th Gen)</h3>
+      <p class="price">$49.99</p>
+      <p>Smart speaker with Alexa - compact and powerful.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B09B8V1LZ3?tag=YOURAFFILIATETAG" target="_blank">Buy on Amazon</a>
     </div>
-    
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61sPCA0uTPL._AC_SL1500_.jpg" alt="Anker Portable Charger 20,000mAh">
-      <h3>Anker Portable Charger 20,000mAh</h3>
-      <p>High-capacity power bank with fast charging for phones, tablets, and more.</p>
-      <a href="https://www.amazon.com/dp/B07S829LBX?tag=georgeatwood7-20" target="_blank">Buy on Amazon</a>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._AC_SL1500_.jpg" alt="Fire HD 10 Tablet">
+      <h3>Fire HD 10 Tablet</h3>
+      <p class="price">$149.99</p>
+      <p>10.1" full HD display, fast and responsive, ideal for streaming and reading.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B08BX7FV5L?tag=YOURAFFILIATETAG" target="_blank">Buy on Amazon</a>
     </div>
-    
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/71E5zB1qbIL._AC_SL1500_.jpg" alt="iRobot Roomba 692 Robot Vacuum">
-      <h3>iRobot Roomba 692 Robot Vacuum</h3>
-      <p>Wi-Fi connected vacuum with intelligent sensors and voice control support.</p>
-      <a href="https://www.amazon.com/dp/B0842XYHKY?tag=georgeatwood7-20" target="_blank">Buy on Amazon</a>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81xL5Fy0zPL._AC_SL1500_.jpg" alt="Kasa Smart Plug">
+      <h3>Kasa Smart Plug 4-Pack</h3>
+      <p class="price">$24.99</p>
+      <p>Control your appliances remotely via app or voice.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B07B8W2KHZ?tag=YOURAFFILIATETAG" target="_blank">Buy on Amazon</a>
     </div>
-    
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61D8CtzjL4L._AC_SL1500_.jpg" alt="Instant Pot Duo 7-in-1 Electric Pressure Cooker">
-      <h3>Instant Pot Duo 7-in-1 Electric Pressure Cooker</h3>
-      <p>One-touch cooker for rice, soups, meats, yogurt, and more — saves time and space.</p>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=georgeatwood7-20" target="_blank">Buy on Amazon</a>
-    </div>
-    
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61Tnj8DbPGL._AC_SL1500_.jpg" alt="Wyze Cam v3 with Color Night Vision">
-      <h3>Wyze Cam v3 with Color Night Vision</h3>
-      <p>Indoor/outdoor security camera with motion detection and 1080p HD video.</p>
-      <a href="https://www.amazon.com/dp/B08R59YH7W?tag=georgeatwood7-20" target="_blank">Buy on Amazon</a>
-    </div>
-    
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/51Da2Z+FTnL._AC_SL1000_.jpg" alt="Fire TV Stick 4K with Alexa Voice Remote">
-      <h3>Fire TV Stick 4K with Alexa Voice Remote</h3>
-      <p>Stream in 4K with access to Netflix, Prime Video, Disney+, and more.</p>
-      <a href="https://www.amazon.com/dp/B08XVYZ1Y5?tag=georgeatwood7-20" target="_blank">Buy on Amazon</a>
-    </div>
-    
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/71gY9Z3ScrL._AC_SL1500_.jpg" alt="Apple AirTag 4 Pack">
-      <h3>Apple AirTag 4 Pack</h3>
-      <p>Easily track and locate items with Apple’s Find My network.</p>
-      <a href="https://www.amazon.com/dp/B0932QJ2JZ?tag=georgeatwood7-20" target="_blank">Buy on Amazon</a>
-    </div>
-    
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/81dcyt10l+L._AC_SL1500_.jpg" alt="Keurig K-Mini Coffee Maker">
-      <h3>Keurig K-Mini Coffee Maker</h3>
-      <p>Compact single serve coffee maker fits anywhere and brews fresh coffee fast.</p>
-      <a href="https://www.amazon.com/dp/B07GV2S1GS?tag=georgeatwood7-20" target="_blank">Buy on Amazon</a>
-    </div>
-    
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61QJ+JjHMiL._AC_SL1500_.jpg" alt="BLACK+DECKER Dustbuster Handheld Vacuum">
-      <h3>BLACK+DECKER Dustbuster Handheld Vacuum</h3>
-      <p>Cordless, portable vacuum for quick cleanups in your home or car.</p>
-      <a href="https://www.amazon.com/dp/B06X9NQ8GX?tag=georgeatwood7-20" target="_blank">Buy on Amazon</a>
-    </div>
-    
-</div>
-<footer>© 2025 Meta Deals. Powered by Amazon Affiliate Program.</footer>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Meta Deals. All rights reserved.</p>
+  </footer>
 </body>
 </html>
