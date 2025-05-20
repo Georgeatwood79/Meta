@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meta Deals - Shop the latest in electronics and smart home gadgets." />
+  <title>Products - Meta Deals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #0a0a23;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+    .buy-btn {
+      background: #0074d9;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meta Deals</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="products">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._AC_SL1500_.jpg" alt="Echo Dot">
+      <h3>Echo Dot (5th Gen)</h3>
+      <p class="price">$49.99</p>
+      <p>Smart speaker with Alexa - compact and powerful.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B09B8V1LZ3?tag=YOURAFFILIATETAG" target="_blank">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._AC_SL1500_.jpg" alt="Fire HD 10 Tablet">
+      <h3>Fire HD 10 Tablet</h3>
+      <p class="price">$149.99</p>
+      <p>10.1" full HD display, fast and responsive, ideal for streaming and reading.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B08BX7FV5L?tag=YOURAFFILIATETAG" target="_blank">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81xL5Fy0zPL._AC_SL1500_.jpg" alt="Kasa Smart Plug">
+      <h3>Kasa Smart Plug 4-Pack</h3>
+      <p class="price">$24.99</p>
+      <p>Control your appliances remotely via app or voice.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B07B8W2KHZ?tag=YOURAFFILIATETAG" target="_blank">Buy on Amazon</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Meta Deals. All rights reserved.</p>
+  </footer>
+</body>
+</html>
