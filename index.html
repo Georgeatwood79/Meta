@@ -2,24 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Top Electronics & Household Deals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meta Deals | Electronics & Household</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-    header { background-color: #333; color: #fff; padding: 1rem; text-align: center; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #eef2f7; }
+    header { background-color: #00509e; color: #fff; padding: 1rem; text-align: center; }
+    header img { max-height: 60px; vertical-align: middle; margin-right: 10px; }
+    .logo-title { display: flex; align-items: center; justify-content: center; gap: 10px; }
     .container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; padding: 1rem; }
     .product { background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
     .product img { max-width: 100%; border-radius: 8px; }
     .product h3 { font-size: 1.1rem; margin: 0.5rem 0; }
-    .product p { font-size: 0.9rem; color: #555; }
+    .product p { font-size: 0.9rem; color: #444; }
     .buy-button { display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; background-color: #28a745; color: #fff; text-decoration: none; border-radius: 5px; }
-    footer { text-align: center; padding: 1rem; background-color: #333; color: white; margin-top: 2rem; }
+    footer { text-align: center; padding: 1rem; background-color: #003f7d; color: white; margin-top: 2rem; }
+    form { max-width: 400px; margin: 2rem auto; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    form h2 { text-align: center; margin-bottom: 1rem; }
+    input, textarea { width: 100%; padding: 0.5rem; margin: 0.5rem 0; border-radius: 5px; border: 1px solid #ccc; }
+    button { background-color: #00509e; color: white; padding: 0.5rem 1rem; border: none; border-radius: 5px; cursor: pointer; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Top-Selling Electronics & Household Items</h1>
-    <p>Great deals updated regularly!</p>
+    <div class="logo-title">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg" alt="Logo">
+      <h1>Meta Deals Store</h1>
+    </div>
+    <p>Top Electronics & Household Items | Best Daily Deals</p>
   </header>
 
   <div class="container">
@@ -71,22 +80,18 @@
       <p>Perfect for smoothies, shakes, and more. Easy to clean!</p>
       <a class="buy-button" href="#">Buy Now</a>
     </div>
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61o6gR95vUL._AC_SL1500_.jpg" alt="Digital Thermostat">
-      <h3>Smart Digital Thermostat</h3>
-      <p>Save energy and stay comfortable with smart temperature control.</p>
-      <a class="buy-button" href="#">Buy Now</a>
-    </div>
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61tWTMP5VsL._AC_SL1500_.jpg" alt="Kitchen Organizer">
-      <h3>Adjustable Kitchen Drawer Organizer</h3>
-      <p>Keep your kitchen tools neatly arranged and easy to find.</p>
-      <a class="buy-button" href="#">Buy Now</a>
-    </div>
   </div>
 
+  <form name="contact" method="POST" data-netlify="true">
+    <h2>Contact Us</h2>
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="email" name="email" placeholder="Your email" required />
+    <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
   <footer>
-    <p>&copy; 2025 Top Deals Store | All links are affiliate examples</p>
+    <p>&copy; 2025 Meta Deals | All links are examples</p>
   </footer>
 </body>
 </html>
